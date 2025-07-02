@@ -1,0 +1,247 @@
+body {
+  font-family: 'Algerian', serif;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background:linear-gradient(135deg, #db11c3, #021fff);
+  padding: 45px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 30px;
+}
+
+.login-card input {
+  display: block;
+  width: 91.5%;
+  padding: 12px;
+  margin: 30px 0;
+  border-radius: 07px;
+  border: 1px solid #ccc;
+}
+
+.login-card button {
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboard-container {
+  margin: 40px;
+}
+
+.upload-section, .files-section {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* === Dashboard General === */
+.dashboard-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.dashboard-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* === Upload Section === */
+.upload-section {
+  background:linear-gradient(135deg, #db11c3, #0114a5);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.upload-section h2 {
+  margin-bottom: 20px;
+  color: #2575fc;
+}
+
+.upload-section label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.upload-section input[type="text"],
+.upload-section input[type="password"],
+.upload-section input[type="file"] {
+  display: block;
+  width: 95.5%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.upload-section button {
+  margin-top: 20px;
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.upload-section button:hover {
+  background: #6a11cb;
+}
+
+/* === Files Section === */
+.files-section {
+  background: linear-gradient(135deg, #0114a5, #db11c3);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.files-section h2 {
+  margin-bottom: 20px;
+  color: #2575fc;
+}
+
+.files-section a.btn {
+  display: inline-block;
+  background: #2575fc;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.files-section a.btn:hover {
+  background: #6a11cb;
+}
+
+/* === File Item === */
+.file-item {
+  margin-bottom: 15px;
+}
+
+.file-item a {
+  margin-right: 10px;
+}
+
+.delete-form input {
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.delete-form {
+  display: inline-block;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.back-link {
+  margin-top: 30px;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #2575fc;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+#loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#loading-text {
+  font-family: 'Times New Roman', serif;
+  font-size: 24px;
+  color: #2575fc;
+  margin-bottom: 20px;
+}
+
+.spinner {
+  border: 8px solid #3700fe;
+  border-top: 8px solid #2575fc;
+  border-bottom: 8px solid #6a11cb;
+  border-left: 8px solid #c0392b;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* === Link Halaman Login di atas === */
+.login-link {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  font-family: 'Playfair Display', serif; /* Font beda */
+  font-weight: 700; /* Bold */
+  font-size: 26px;  /* Besar */
+  color: #000;      /* Hitam */
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
